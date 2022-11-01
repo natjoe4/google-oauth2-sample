@@ -1,7 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-}
+  eslint: {
+    dirs: ['pages', 'utils', 'lib', 'components', 'atoms', '__tests__', 'scripts']
+  },
+  webpack5: true,
+  webpack: config => {
+    config.resolve.fallback = { fs: false };
 
-module.exports = nextConfig
+    return config;
+  }
+};
+
+module.exports = nextConfig;

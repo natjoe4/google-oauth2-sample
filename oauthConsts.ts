@@ -1,0 +1,9 @@
+export const clientId = '806277395720-n8sm0lvimdo7um5f6saspd81di47qc33.apps.googleusercontent.com';
+export const clientSecret = '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';
+export const authorizeUrl = 'https://accounts.google.com/o/oauth2/v2/auth';
+export const tokenURL = 'https://www.googleapis.com/oauth2/v4/token';
+export const redirectUri = 'http://localhost:3000/callback';
+export const OAUTH_STATE_KEY = 'state-key';
+export const OAUTH_RESPONSE = 'react-use-oauth2-response';
+export const POPUP_HEIGHT = 700;
+export const POPUP_WIDTH = 600;
